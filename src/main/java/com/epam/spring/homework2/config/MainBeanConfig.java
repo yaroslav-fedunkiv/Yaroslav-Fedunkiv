@@ -4,6 +4,7 @@ import com.epam.spring.homework2.beans.*;
 import org.springframework.context.annotation.*;
 
 @Configuration
+@PropertySource("classpath:application.properties")
 @Import({BeanConfig.class})
 public class MainBeanConfig {
     @Lazy

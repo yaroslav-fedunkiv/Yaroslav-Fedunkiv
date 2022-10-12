@@ -5,7 +5,7 @@ import javax.annotation.PreDestroy;
 
 public class BeanE {
     private String name;
-    private Integer value;
+    private String value;
 
     @PostConstruct
     public void postConstructMethod(){
@@ -19,7 +19,7 @@ public class BeanE {
 
     @Override
     public String toString() {
-        return "BeanA{" +
+        return "BeanE{" +
                 "name='" + name + '\'' +
                 ", value=" + value +
                 '}';

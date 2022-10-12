@@ -5,7 +5,7 @@ import org.springframework.beans.factory.InitializingBean;
 
 public class BeanA implements InitializingBean, DisposableBean {
     private String name;
-    private Integer value;
+    private String value;
 
     @Override
     public void destroy() throws Exception {

@@ -6,7 +6,7 @@ public class BeanD {
     @Value("${bean.name}")
     private String name;
     @Value("${bean.value}")
-    private Integer value;
+    private String value;
 
     public void initMethod(){
         System.out.println(this.getClass().getSimpleName() + " class in initMethod()");
@@ -18,7 +18,7 @@ public class BeanD {
 
     @Override
     public String toString() {
-        return "BeanA{" +
+        return "BeanD{" +
                 "name='" + name + '\'' +
                 ", value=" + value +
                 '}';

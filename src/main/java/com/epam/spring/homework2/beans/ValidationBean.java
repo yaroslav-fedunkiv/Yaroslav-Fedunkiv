@@ -24,9 +24,9 @@ public class ValidationBean implements BeanPostProcessor {
             fieldValue.setAccessible(true);
 
             String name = (String) fieldName.get(bean);
-            Integer value = (Integer) fieldValue.get(bean);
+            String value = (String) fieldValue.get(bean);
 
-            if (name == null || (value == null || value <= 0)){
+            if (name == null || (value == null || Integer.parseInt(value) <= 0)){
                 return false;
             }
         } catch (NoSuchFieldException | IllegalAccessException e) {
